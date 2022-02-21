@@ -239,13 +239,14 @@ h2 {
 
 .benefits__box {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 370px;
   width: 1124px;
   background: var(--color-white);
   border: 1px solid #E8E9ED;
   border-radius: 5px;
   position: relative;
+  padding: 0 20px 0 35px;
 }
 
 .benefits__content {
@@ -284,6 +285,7 @@ h2 {
   height: 219px;
   position: relative;
   bottom: -38px;
+  right: 50px;
   z-index: 2;
 }
 
@@ -312,6 +314,7 @@ h2 {
   height: 328px;
   position: relative;
   bottom: -13px;
+  left: 35px;
 }
 
 .benefits__box--phone .benefits__img::before {
@@ -322,6 +325,7 @@ h2 {
   height: 320px;
   background: var(--color-primary);
   border-radius: 50%;
+  left: 70px;
 }
 
 .benefits__split {
