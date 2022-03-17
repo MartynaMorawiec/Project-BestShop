@@ -15,6 +15,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 10px;
+}
+
 body {
   font-family: var(--font-open-sans);
 }
@@ -34,11 +38,11 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 49px;
+  font-size: 4.9rem;
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 3.6rem;
 }
 
 .btn {
@@ -63,7 +67,7 @@ h2 {
 .header {
   width: 100%;
   height: 70px;
-  box-shadow: 0px 3px 6px #00000029;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161);
   position: fixed;
   top: 0;
 }
@@ -82,7 +86,7 @@ h2 {
 }
 
 .header__logo {
-  font-size: 32px;
+  font-size: 3.2rem;
 }
 
 .nav__list {
@@ -91,8 +95,7 @@ h2 {
 }
 
 .nav__item {
-  font-size: 11px;
-  font-weight: 700;
+  font: 700 1.1rem var(--font-open-sans);
   text-align: center;
   text-transform: uppercase;
 }
@@ -112,10 +115,8 @@ h2 {
 /* Section Opening */
 
 .opening {
-  background-image: url("../assets/Background.png");
-  background-repeat: no-repeat;
-  background-size: 107%;
-  background-position: bottom;
+  background: url("../assets/Background.png") no-repeat bottom;
+  background-size: contain;
   width: 100%;
   height: 712px;
   position: relative;
@@ -131,18 +132,16 @@ h2 {
 }
 
 .opening__text {
-  font-size: 16px;
-  font-weight: 400;
+  font: 400 1.6rem var(--font-open-sans);
   margin: 20px 0 38px 0;
 }
 
 .opening__btn {
+  font: 700 1.6rem var(--font-open-sans);
   padding: 22px 157px 23px;
   background-color: var(--color-primary);
-  font-size: 16px;
-  font-weight: 700;
   border-radius: 40px;
-  box-shadow: 5px 10px 14px #07ACE629;
+  box-shadow: 5px 10px 14px var(--color-primary-shadow);
 }
 
 
@@ -151,7 +150,7 @@ h2 {
 .statistics {
   padding: 100px 0 121px;
   background-color: var(--color-white);
-  box-shadow: 0px -5px 80px #00000029;
+  box-shadow: 0px -5px 80px rgba(0, 0, 0, 0.161);
   position: relative;
   z-index: 5;
 }
@@ -206,16 +205,13 @@ h2 {
 }
 
 .statistics__number {
-  font-size: 20px;
-  font-weight: 800;
+  font: 800 2rem var(--font-raleway);
   letter-spacing: 5.96px;
   margin: 14px 0 19px;
 }
 
 .statistics__text {
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 1.2;
+  font: 400 1.7rem/1.2 var(--font-raleway);
   text-align: center;
   color: var(--color-grey);
   margin-top: 19px;
@@ -243,7 +239,7 @@ h2 {
   height: 370px;
   width: 1124px;
   background: var(--color-white);
-  border: 1px solid #E8E9ED;
+  border: 1px solid rgb(232, 233, 237);
   border-radius: 5px;
   position: relative;
   padding: 0 20px 0 35px;
@@ -256,9 +252,7 @@ h2 {
 }
 
 .benefits__text {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
+  font: 400 1.6rem var(--font-open-sans);
   margin: 30px 0 50px;
   position: relative;
 }
@@ -284,7 +278,7 @@ h2 {
   width: 386px;
   height: 219px;
   position: relative;
-  bottom: -38px;
+  top: 38px;
   right: 50px;
   z-index: 2;
 }
@@ -296,7 +290,8 @@ h2 {
   top: 65px;
   width: 180px;
   height: 180px;
-  transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+  transform: rotate(45deg);
+  transform-origin: center;
   background: var(--color-redish);
   border-radius: 41px;
 }
@@ -313,7 +308,7 @@ h2 {
   width: 426px;
   height: 328px;
   position: relative;
-  bottom: -13px;
+  top: 13px;
   left: 35px;
 }
 
@@ -391,27 +386,23 @@ h2 {
 }
 
 .pricing__box--bas {
-  border: 1px solid #FB3B64;
+  border: 1px solid var(--color-redish);
 }
 
 .pricing__option {
-  font-style: var(--font-raleway);
-  font-size: 20px;
+  font: 700 2rem var(--font-raleway);
   margin: 34px 0 14px;
-  color: #13253B;
+  color: rgb(19, 37, 59);
 }
 
 .pricing__price {
-  font-size: 46px;
-  font-weight: 300;
+  font: 300 4.6rem var(--font-open-sans);
   padding: 9px 0;
   margin-bottom: 5px;
 }
 
 .pricing__limited {
-  font-family: var(--font-raleway);
-  font-size: 12px;
-  font-weight: 700;
+  font: 700 1.2rem var(--font-raleway);
   color: #13253B;
 }
 
@@ -429,9 +420,9 @@ h2 {
 }
 
 .pricing__item {
+  font-size: 1.4rem;
   position: relative;
   margin-bottom: 20px;
-  font-size: 14px;
 }
 
 .pricing__item:not(.pricing__item--cross)::before {
@@ -461,8 +452,7 @@ h2 {
 }
 
 .pricing__btn {
-  font-size: 13px;
-  font-weight: 700;
+  font: 700 1.3rem var(--font-open-sans);
   padding: 16px 57px;
   border-radius: 23px;
   position: relative;
@@ -476,7 +466,7 @@ h2 {
 .pricing__box--prof {
   width: 405px;
   height: 500px;
-  box-shadow: 5px 10px 27px #07ACE629;
+  box-shadow: 5px 10px 27px var(--color-primary-shadow);
   border: 1px solid var(--color-primary);  
 }
 
@@ -523,16 +513,16 @@ h2 {
 }
 
 .contact__title {
-  font-size: 49px;
+  font-size: 4.9rem;
 }
 
 .contact__text {
-  font-size: 16px;
+  font-size: 1.6rem;
   margin: 22px 0 42px;
 }
 
 .contact__link {
-  font-size: 16px;
+  font-size: 1.6rem;
   color: var(--color-grey);
   margin-left: 10px;
 }
@@ -542,8 +532,7 @@ h2 {
 }
 
  .form__label--style {
-  font-size: 11px;
-  font-weight: 700;
+  font: 700 1.1rem var(--font-open-sans);
   color: var(--color-primary);
   letter-spacing: 3.28px;
   text-transform: uppercase;
@@ -572,10 +561,8 @@ input[type="text"] {
 .checkbox {
   cursor: pointer;
   display: flex;
-  color: #707070;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.5;
+  color: rgb(112, 112, 112);
+  font: 400 1.2rem/1.5 var(--font-open-sans);
   margin: 30px 0 20px;
 }
 
@@ -595,13 +582,12 @@ input[type="text"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #95989A;
+  border: 1px solid rgb(149, 152, 154);
 }
 
 .checkbox__input:checked + .checkbox__span::after {
   content: "";
-  background-image: url("../assets/Checkmark.svg");
-  background-repeat: no-repeat;
+  background: url("../assets/Checkmark.svg") no-repeat;
   background-size: cover;
   position: absolute;
   width: 12px;
@@ -610,12 +596,11 @@ input[type="text"] {
 
 .contact__btn {
   padding: 20px 97px 19px 97px;
-  font-size: 13px;
-  font-weight: 700;
+  font: 700 1.3rem var(--font-open-sans);
   background-color: var(--color-primary);
   border: none;
   border-radius: 35px;
-  box-shadow: 5px 10px 14px #07ACE629;
+  box-shadow: 5px 10px 14px var(--color-primary-shadow);
   float: right;
 }
 
@@ -625,7 +610,7 @@ input[type="text"] {
   width: 100%;
   height: 89px;
   background-color: var(--color-light-grey);
-  box-shadow: 0px -5px 40px #00000029;
+  box-shadow: 0px -5px 40px rgba(0, 0, 0, 0.161);
 }
 
 .footer__container {
@@ -636,23 +621,16 @@ input[type="text"] {
 }
 
 .footer__logo {
-  font-size: 26px;
+  font-size: 2.6rem;
 }
 
 .footer__copy {
   color: var(--color-grey);
-  font-size: 11px;
-  font-weight: 400;
+  font: 400 1.1rem var(--font-open-sans);
   margin-top: 6.5px;
 }
 
 .footer__twitter {
   margin-right: 20px;
 }
-
-
-
-
-
-
 
